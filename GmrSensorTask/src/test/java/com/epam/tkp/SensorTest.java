@@ -7,21 +7,21 @@ import com.epam.tkp.sensor.Sensor;
 public class SensorTest {
 
     @Test
-    public void testSineOutput(){
+    public void testSineOutput() {
         Sensor sensor = new Sensor();
-        double angle = 100;
+        double angle = 30;
         sensor.sentAngle(angle);
         double sinOutput = sensor.getSensorSinData();
-        System.out.println("Angle="+angle+" degrees. Sine voltage="+ sinOutput);
+        System.out.println("LOG: Result voltage=" + sinOutput + "\n");
     }
-    
+
     @Test
-    public void testCosineOutput(){
+    public void testCosineOutput() {
         Sensor sensor = new Sensor();
         double angle = 100;
         sensor.sentAngle(angle);
         double cosOutput = sensor.getSensorCosData();
-        System.out.println("Angle="+angle+" degrees. Cosine voltage="+ cosOutput);
+        System.out.println("LOG: Result voltage=" + cosOutput + "\n");
     }
-    
+
 }
